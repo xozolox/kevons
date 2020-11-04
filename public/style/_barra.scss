@@ -1,0 +1,38 @@
+.barra-estado {
+  border-bottom: 0.3em groove white;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), 
+              linear-gradient(darkgray, white);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Commissioner", sans-serif;
+  .barra-product {
+    font-size: 1.5em;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-left: 0.3em solid dodgerblue;
+    border-radius: 0.3em;
+    box-shadow: 0 0 2em 0.01em white;
+    padding: 0.2em;
+    .barra-number {
+      font-size: 1.13em;
+      background-color: dodgerblue;
+      border: 0.01em solid white;
+      border-radius: 0.3em;
+      color: white;
+      padding: 0.2em;
+    }
+  }
+  button {
+    height: 6em;
+    width: 6em;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), linear-gradient(-50deg, dodgerblue, blue);
+    border: 0.3em outset cyan;
+    border-radius: 50%;
+    outline: none;
+    .icon-state-cart {
+      width: 5em;
+      height: 5em;
+      transform: translate(-0.5em, 0.3em);
+    }
+  }
+}

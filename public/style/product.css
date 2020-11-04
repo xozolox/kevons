@@ -1,0 +1,341 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* BODY */
+body {
+  background-color: #556;
+  background-image: linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a), linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
+  background-size: 80px 140px;
+  background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+}
+
+/* HEADER */
+header {
+  background-image: url("../image/fondo-jean.jpg");
+  background-size: cover;
+  background-position: center;
+  border-bottom: 0.3em groove white;
+  height: 10em;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header h1 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 4em;
+  color: darkred;
+  text-align: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 0.04em outset gold;
+  border-top-left-radius: 0.8em;
+  border-bottom-right-radius: 0.8em;
+  transform: rotate(-10deg);
+}
+
+/* BARRA */
+.barra-estado {
+  border-bottom: 0.3em groove white;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), linear-gradient(darkgray, white);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Commissioner", sans-serif;
+}
+.barra-estado .barra-product {
+  font-size: 1.5em;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-left: 0.3em solid dodgerblue;
+  border-radius: 0.3em;
+  box-shadow: 0 0 2em 0.01em white;
+  padding: 0.2em;
+}
+.barra-estado .barra-product .barra-number {
+  font-size: 1.13em;
+  background-color: dodgerblue;
+  border: 0.01em solid white;
+  border-radius: 0.3em;
+  color: white;
+  padding: 0.2em;
+}
+.barra-estado button {
+  height: 6em;
+  width: 6em;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), linear-gradient(-50deg, dodgerblue, blue);
+  border: 0.3em outset cyan;
+  border-radius: 50%;
+  outline: none;
+}
+.barra-estado button .icon-state-cart {
+  width: 5em;
+  height: 5em;
+  transform: translate(-0.5em, 0.3em);
+}
+
+/* MENU */
+/* SECTION TITULO*/
+/* MENU BUTTONS */
+nav {
+  border: 0.1em groove white;
+  background: dodgerblue;
+  border-radius: 50%;
+  font-size: 2.9em;
+  line-height: 1.3em;
+  height: 1.5em;
+  width: 1.5em;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  left: 0.02em;
+  z-index: 2;
+}
+
+#model_box {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(30deg, rgba(0, 0, 255, 0.6), rgba(173, 216, 230, 0.6), rgba(0, 0, 255, 0.6));
+  font-family: "Commissioner", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: scale(0, 0);
+  transition: all 0.3s ease;
+}
+#model_box .model-logo {
+  height: 9em;
+  width: 100%;
+  border: 0.01em solid white;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+}
+#model_box .model-logo .icon-logo {
+  width: 100%;
+  background: linear-gradient(rgba(255, 255, 0, 0.9), rgba(255, 166, 0, 0.9));
+}
+#model_box .model-logo .icon-logo .svg_one {
+  font-size: 8em;
+  left: 50%;
+  transform: translate(43%, 65%);
+}
+#model_box .model-logo .icon-logo .svg_two {
+  font-size: 1em;
+  transform: translate(46%, 85%);
+}
+#model_box .model-menu {
+  width: 100%;
+}
+#model_box .model-menu a {
+  display: block;
+  width: 100%;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  color: white;
+  font-size: 1.9em;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+#model_box .model-menu a:nth-child(1) {
+  position: relative;
+  height: 2em;
+  border-top: none;
+  border-bottom: 0.16em solid #ffff00;
+}
+#model_box .model-menu a:nth-child(1):active {
+  border-color: yellow;
+}
+#model_box .model-menu a:nth-child(1):active .icon-inicio {
+  fill: yellow;
+}
+#model_box .model-menu a:nth-child(1) .icon-inicio {
+  width: 1.2em;
+  height: 1.2em;
+  position: absolute;
+  fill: #ffff00;
+  background: linear-gradient(rgba(128, 128, 128, 0.1), rgba(128, 128, 128, 0.1)), linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+  border-radius: 0.3em;
+  transform: translate(0, -1em);
+}
+#model_box .model-menu a:nth-child(2) {
+  position: relative;
+  height: 2em;
+  border-top: none;
+  border-bottom: 0.16em solid #00ffff;
+}
+#model_box .model-menu a:nth-child(2):active {
+  border-color: yellow;
+}
+#model_box .model-menu a:nth-child(2):active .icon-productos {
+  fill: yellow;
+}
+#model_box .model-menu a:nth-child(2) .icon-productos {
+  width: 1.2em;
+  height: 1.2em;
+  position: absolute;
+  fill: #1e90ff;
+  background: linear-gradient(rgba(128, 128, 128, 0.1), rgba(128, 128, 128, 0.1)), linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+  border-radius: 0.3em;
+  transform: translate(0, -1em);
+}
+#model_box .model-menu a:nth-child(3) {
+  position: relative;
+  height: 2em;
+  border-top: none;
+  border-bottom: 0.16em solid #00ffff;
+}
+#model_box .model-menu a:nth-child(3):active {
+  border-color: yellow;
+}
+#model_box .model-menu a:nth-child(3):active .icon-contactanos {
+  fill: yellow;
+}
+#model_box .model-menu a:nth-child(3) .icon-contactanos {
+  width: 1.2em;
+  height: 1.2em;
+  position: absolute;
+  fill: #1e90ff;
+  background: linear-gradient(rgba(128, 128, 128, 0.1), rgba(128, 128, 128, 0.1)), linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+  border-radius: 0.3em;
+  transform: translate(0, -1em);
+}
+
+/* CATEGORIA PRODUCTS */
+aside {
+  background: linear-gradient(30deg, dodgerblue, dodgerblue, lightskyblue);
+  border-bottom: 0.3em ridge white;
+  border-bottom-left-radius: 0.4em;
+  border-bottom-right-radius: 0.4em;
+}
+aside label {
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 1.2em;
+  border: 0.1em solid black;
+  width: 48%;
+  display: inline-block;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), linear-gradient(-10deg, darkturquoise, blue);
+  position: relative;
+  margin-bottom: 0.7em;
+  border-bottom-right-radius: 0.6em;
+  border-top-right-radius: 0.6em;
+}
+aside label:nth-child(1) {
+  margin-top: 0.5em;
+}
+aside label:nth-child(7) {
+  margin-bottom: 0.5em;
+}
+aside label .name-content {
+  display: block;
+  transform: rotateY(360deg);
+  color: white;
+  text-align: center;
+}
+aside label::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.6);
+  background-color: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border-bottom-right-radius: 0.6em;
+  border-top-right-radius: 0.6em;
+  padding-bottom: 0.18em;
+  padding-top: 0.18em;
+  padding-right: 0.28em;
+  left: -0.1em;
+  top: -0.17em;
+}
+aside .arrow {
+  display: inline-block;
+  position: relative;
+  width: 45%;
+  margin-left: 5%;
+  border-radius: 0.6em;
+}
+aside .arrow::after {
+  content: "▼";
+  color: blue;
+  font-size: 1.5em;
+  text-align: center;
+  line-height: 1.5em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: linear-gradient(10deg, darkgray, white);
+  box-shadow: inset 0 0 0.3em 0.15em darkblue;
+  cursor: pointer;
+  pointer-events: none;
+  height: 100%;
+  width: 20%;
+  border-bottom-right-radius: 0.6em;
+  border-top-right-radius: 0.6em;
+}
+aside .arrow select {
+  width: 100%;
+  border: 0.01em solid darkblue;
+  background-color: lightskyblue;
+  border-radius: 0.6em;
+  padding-top: 0.13em;
+  padding-bottom: 0.13em;
+  box-shadow: inset 0 0 0.6em 0.15em darkblue;
+  text-align-last: center;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.2em;
+  outline: none;
+  cursor: pointer;
+  color: black;
+}
+aside .arrow select:focus {
+  background-color: lightblue;
+}
+aside .arrow select option {
+  background-color: dodgerblue;
+  color: white;
+}
+
+/*CONTENIDO DE PRODUCTOS */
+section {
+  border: 0.2em solid black;
+  background-image: linear-gradient(darkgray, black);
+}
+
+/* FOOTER */
+footer {
+  margin-top: 10em;
+  height: 7em;
+  background: linear-gradient(rgba(255, 255, 255, 0.13), rgba(255, 255, 255, 0.13)), linear-gradient(rgba(0, 0, 139, 0.5), rgba(0, 0, 139, 0.5)), linear-gradient(blue, blue);
+  font-family: "Commissioner", sans-serif;
+  font-size: 1.34em;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+footer .footer-curves-one {
+  width: 100%;
+  left: 0;
+  transform: translate(0, -103%);
+  position: absolute;
+}
+footer .footer-curves-two {
+  transform: translate(0, -99%);
+  width: 100%;
+  position: absolute;
+  left: 0;
+}

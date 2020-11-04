@@ -1,0 +1,32 @@
+@import 'mixin';
+.box-producto-two {
+  border-top-left-radius: 0.9em;
+  border-top-right-radius: 0.9em;
+  overflow: hidden;
+  margin-bottom: 5em;
+  width: 100%;
+  @include titulo;
+  .swiper-container {
+    height: 25em;
+    width: 100%;
+    z-index: 0;
+    border-bottom: 0.2em outset white;
+    .swiper-slide {
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .swiper-button-prev {
+      background-color: rgba(0, 0, 0, 0.2);
+      border-radius: 0.5em;
+      padding: 1.2em;
+    }
+    .swiper-button-next {
+      background-color: rgba(0, 0, 0, 0.2);
+      border-radius: 0.5em;
+      padding: 1.2em;
+    }
+  }
+  @include descripcion('two');
+}

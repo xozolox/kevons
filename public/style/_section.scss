@@ -1,0 +1,43 @@
+section {
+  border-bottom-left-radius: 0.9em;
+  border-bottom-right-radius: 0.9em;
+  background: linear-gradient(rgba(255, 255, 255, 0.13), rgba(255, 255, 255, 0.13)), linear-gradient(darkblue, darkblue);
+  h2.sub-title {
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), linear-gradient(10deg, gray, transparent), linear-gradient(20deg, darkgray, lightgray);
+    border-bottom: 0.09em solid black;
+    border-bottom-left-radius: 0.4em;
+    border-bottom-right-radius: 0.4em;
+    margin-bottom: 2.5em;
+    height: 2.5em;
+    font-size: 1.2em;
+    font-family: "Commissioner", sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    span {
+      &:nth-child(1) {
+        color: black;
+        height: 1.3em;
+        border-bottom: 0.15em solid white;
+        border-bottom-left-radius: 0.2em;
+        border-bottom-right-radius: 0.2em;
+      }
+      &:nth-child(2) {
+        color: black;
+        height: 1.3em;
+        border-bottom: 0.15em solid white;
+        border-bottom-left-radius: 0.2em;
+        border-bottom-right-radius: 0.2em;
+      }
+      &:nth-child(3) {
+        color: black;
+        height: 1.3em;
+        border-bottom: 0.15em solid white;
+        border-bottom-left-radius: 0.2em;
+        border-bottom-right-radius: 0.2em;
+      }
+    }
+  }
+  @import 'product-principal';
+  @import 'product-secundario';
+}

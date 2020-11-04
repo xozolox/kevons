@@ -1,0 +1,22 @@
+footer {
+  margin-top: 10em;
+  height: 7em;
+  background: linear-gradient(rgba(255, 255, 255, 0.13), rgba(255, 255, 255, 0.13)), linear-gradient(rgba(0, 0, 139, 0.5), rgba(0, 0, 139, 0.5)), linear-gradient(blue, blue);
+  font-family: "Commissioner", sans-serif;
+  font-size: 1.34em;
+  color: white;
+  text-align: center;
+  position: relative;
+  .footer-curves-one {
+    width: 100%;
+    left: 0;
+    transform: translate(0, -103%);
+    position: absolute;
+  }
+  .footer-curves-two {
+    transform: translate(0, -99%);
+    width: 100%;
+    position: absolute;
+    left: 0;
+  }
+}
