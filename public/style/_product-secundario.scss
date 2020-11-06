@@ -28,5 +28,6 @@
       padding: 1.2em;
     }
   }
-  @include descripcion('two');
+  @include product-category('product-category');
+  @include descripcion('item-description-two');
 }

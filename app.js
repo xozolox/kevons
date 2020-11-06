@@ -39,7 +39,7 @@ const start = async () => {
     method: 'GET',
     path: '/',
     handler: (req, h) => {
-      return  h.view('main');
+      return  h.view('main')
     }
   });
 
@@ -47,9 +47,24 @@ const start = async () => {
     method: 'GET',
     path: '/products',
     handler: (req, h) => {
-      return h.view('product');
+      return h.view('product', {
+        number: [
+          {title: 'PARKA DE CUERO', categoria: 'Parkas', talle: 45, color: 'negro oscuro'}, 
+          {title: 'JEANS DE CUERO', categoria: 'Jeans', talle: 36, color: 'celeste degradado'}, 
+          {title: 'CAMISAS DE RAYAS', categoria: 'Camisas', talle: 38, color: 'rojo carmesi'},
+          {title: 'PANTALONES XXXL', categoria: 'Pantalones', talle: 67, color: 'amarillo'}
+        ],
+      });
     }
-  })
+  });
+
+  server.route({
+    method: 'GET',
+    path: '/contactanos',
+    handler: (req, h) => {
+      return h.view('contactanos');
+    }
+  });
 
   await server.register(inert);
 

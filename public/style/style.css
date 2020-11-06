@@ -79,6 +79,8 @@ header h1 {
 /* MENU */
 /* SECTION TITULO*/
 /* MENU BUTTONS */
+/* SECTION CONTENIDO IMAGE */
+/* SECTION CONTENIDO CATEGORIA */
 nav {
   border: 0.1em groove white;
   background: dodgerblue;
@@ -219,8 +221,12 @@ section {
   background: linear-gradient(rgba(255, 255, 255, 0.13), rgba(255, 255, 255, 0.13)), linear-gradient(darkblue, darkblue);
   /* SECTION TITULO*/
   /* MENU BUTTONS */
+  /* SECTION CONTENIDO IMAGE */
+  /* SECTION CONTENIDO CATEGORIA */
   /* SECTION TITULO*/
   /* MENU BUTTONS */
+  /* SECTION CONTENIDO IMAGE */
+  /* SECTION CONTENIDO CATEGORIA */
 }
 section h2.sub-title {
   background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), linear-gradient(10deg, gray, transparent), linear-gradient(20deg, darkgray, lightgray);
@@ -293,6 +299,36 @@ section .box-producto-one .swiper-container .swiper-button-next {
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 0.5em;
   padding: 1.2em;
+}
+section .box-producto-one .product-category {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.25em;
+  border-bottom: 0.25em ridge white;
+}
+section .box-producto-one .product-category table {
+  border-collapse: collapse;
+  width: 100%;
+}
+section .box-producto-one .product-category table th {
+  border-bottom: 0.27em groove white;
+  background-image: linear-gradient(190deg, dodgerblue, lightskyblue);
+}
+section .box-producto-one .product-category table th:nth-child(2) {
+  border-left: 0.25em solid white;
+  border-right: 0.25em solid white;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+section .box-producto-one .product-category table td {
+  text-align: center;
+  color: white;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-image: linear-gradient(-10deg, dodgerblue, blue);
+}
+section .box-producto-one .product-category table td:nth-child(2) {
+  border-left: 0.25em solid white;
+  border-right: 0.25em solid white;
 }
 section .box-producto-one .item-description-one {
   border-bottom: 0.21em outset white;
@@ -383,6 +419,36 @@ section .box-producto-two .swiper-container .swiper-button-next {
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 0.5em;
   padding: 1.2em;
+}
+section .box-producto-two .product-category {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.25em;
+  border-bottom: 0.25em ridge white;
+}
+section .box-producto-two .product-category table {
+  border-collapse: collapse;
+  width: 100%;
+}
+section .box-producto-two .product-category table th {
+  border-bottom: 0.27em groove white;
+  background-image: linear-gradient(190deg, dodgerblue, lightskyblue);
+}
+section .box-producto-two .product-category table th:nth-child(2) {
+  border-left: 0.25em solid white;
+  border-right: 0.25em solid white;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+section .box-producto-two .product-category table td {
+  text-align: center;
+  color: white;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-image: linear-gradient(-10deg, dodgerblue, blue);
+}
+section .box-producto-two .product-category table td:nth-child(2) {
+  border-left: 0.25em solid white;
+  border-right: 0.25em solid white;
 }
 section .box-producto-two .item-description-two {
   border-bottom: 0.21em outset white;
