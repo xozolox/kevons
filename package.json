@@ -9,10 +9,10 @@
   "author": "kevin",
   "license": "ISC",
   "dependencies": {
-    "@hapi/hapi": "^20.0.1",
-    "@hapi/hoek": "^9.1.0",
-    "@hapi/inert": "^6.0.3",
-    "@hapi/vision": "^6.0.1",
-    "ejs": "^3.1.5"
+    "@koa/router": "^10.0.0",
+    "ejs": "^3.1.5",
+    "koa": "^2.13.0",
+    "koa-ejs": "^4.3.0",
+    "koa-static": "^5.0.0"
   }
 }
