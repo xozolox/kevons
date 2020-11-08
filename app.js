@@ -8,7 +8,7 @@ const { request } = require('http');
 
 const start = async () => {
   const server = hapi.server({
-    port: 3000,
+    port: process.env.PORT || 3000,
     host: 'localhost',
     routes: {
       files: {
