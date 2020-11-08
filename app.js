@@ -2,7 +2,6 @@
 
 const hapi = require('@hapi/hapi');
 const path = require('path');
-const hoek = require('@hapi/hoek');
 const inert = require('@hapi/inert');
 const { request } = require('http');
 
