@@ -144,24 +144,41 @@
   }
 }
 
-@mixin button-effect($btn-name, $btn-rotate) {
+@mixin box-titulo($name-titulo) {
+  .#{$name-titulo} {
+    background-image: linear-gradient(3.5deg, navy,royalblue, skyblue);
+    font-size: 2em;
+    font-family: 'Commissioner', sans-serif;
+    text-align: center;
+    line-height: 1.5em;
+    color: white;
+    text-shadow: 0.03em 0.03em navy, -0.03em 0.03em navy, 0.03em -0.03em navy, -0.03em -0.03em navy;
+    border-bottom-left-radius: 0.3em;
+    border-bottom-right-radius: 0.3em;
+    border-bottom: 0.05em solid white;
+  }
+}
+
+@mixin button-effect($btn-name, $btn-rotate, $btn-width, $btn-one-color, $btn-two-color, $btn-text-color) {
   .#{$btn-name} {
-    font-family: 'Roboto Mono', sans-serif;
+    text-decoration: none;
     font-size: .9em;
     border: 0.1em solid black;
-    width: 55%;
+    width: #{$btn-width};
+    margin-left: 0.3em;
+    margin-top: 0.3em;
     display: inline-block;
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-                linear-gradient(-10deg,darkturquoise, blue);
+    background: linear-gradient(rgba(117, 101, 101, 0.1), rgba(0, 0, 0, 0.1)),
+                linear-gradient(-10deg,#{$btn-one-color}, #{$btn-two-color});
     position: relative;
     margin-bottom: 0.7em;
-    border-bottom-right-radius: 0.6em;
-    border-top-right-radius: 0.6em;
+    border-radius: 0.6em;
     .#{$btn-rotate} {
       display: block;
       transform: rotateY(360deg);
-      color: white;
+      color: #{$btn-text-color};
       text-align: center;
+      font-family: 'Commissioner', sans-serif;
     }
     &::before {
       content: " ";
@@ -169,14 +186,17 @@
       position: absolute;
       width: 100%;
       height: 100%;
-      box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, .6);
+      box-shadow: 0 0 0.2em 0 rgba(0, 0, 0, 1);
       background-color: rgba(255, 255, 255, .15);
       backdrop-filter: blur(5px);
-      border-bottom-right-radius: 0.6em;
-      border-top-right-radius: 0.6em;
+      border-radius: 0.6em;
       padding-bottom: 0.4em;
-      padding-right: 0.2em;
+      padding-right: 0.4em;
       top: -0.2em;
+      left: -0.2em;
+    }
+    &:active .#{$btn-rotate}{
+      color: #{$btn-one-color};
     }
   }
 }
