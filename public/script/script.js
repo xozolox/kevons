@@ -13,14 +13,35 @@ botonMenu.addEventListener('click', () => {
   }
 });
 
-const lista = [1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6, 1, 1, 1, 1, 6];
-let test = lista.filter(num => num == 2);
+// CARRITO DE COMPRAS
+const botonCart = document.querySelector('.open-cart-shop');
+botonCart.addEventListener('click', () => {
+  const openCart = document.querySelector('#box-cart-shop');
+  openCart.classList.toggle('open-carrito');
+  if(openCart.classList.contains('open-carrito')) {
+    openCart.style.transform = 'translate(0,0)';
+    openCart.style.transition = 'all 0.4s ease';
+  }
+});
+
+const closeCart = document.querySelector('.close-cart-shop');
+closeCart.addEventListener('click', () => {
+  const openCart = document.querySelector('#box-cart-shop');
+  openCart.classList.toggle('open-carrito');
+  if(openCart.classList.contains('open-carrito')) {
+  } else {
+    openCart.style.transform = 'translate(-100%, 0)'
+  }
+})
+
+//AÑADIR AL  CARRITO
+const count = () => {
+  let n = 0;
+  return () => {n += 1; return document.querySelector('.barra-number').innerHTML = n;}
+}
+
+const add = document.querySelector('.box-add-cart');
+add.addEventListener('click', count());
 
 //PRUEBA
 
-document.querySelector('.item-image').src = 'https://images.unsplash.com/photo-1603211234763-b279ec387d64?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max';
-document.querySelector('.item-images').src = 'https://images.unsplash.com/photo-1603931690344-d546e4928b99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max';
-document.querySelector('.item-imagese').src = 'https://images.unsplash.com/photo-1603778252234-162da7e262ba?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max';
-document.querySelector('.item-img').src = 'https://images.unsplash.com/photo-1603363586831-a8477630fc19?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max';
-document.querySelector('.item-imgs').src = 'https://images.unsplash.com/photo-1603458360961-8878b5ce18f7?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max';
-document.querySelector('.item-imgse').src = 'https://images.unsplash.com/photo-1602185505373-f5130988677b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max';

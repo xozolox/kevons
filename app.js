@@ -19,7 +19,7 @@ render(app, {
 router
   .get('/', route.home)
   .get('/products', route.product)
-  .get('/contactanos', route.contacto);
+  .get('/contactanos', route.contacto)
 
 app.use(static(path.join(__dirname, 'public')));
 app.use(router.routes());

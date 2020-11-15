@@ -144,11 +144,11 @@
   }
 }
 
-@mixin box-titulo($name-titulo) {
+@mixin box-titulo($name-titulo, $name-fuente) {
   .#{$name-titulo} {
     background-image: linear-gradient(3.5deg, navy,royalblue, skyblue);
     font-size: 2em;
-    font-family: 'Commissioner', sans-serif;
+    font-family: #{$name-fuente}, sans-serif;
     text-align: center;
     line-height: 1.5em;
     color: white;

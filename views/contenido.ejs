@@ -1,8 +1,8 @@
 <section>
-  <% if(number.length) { %>
-    <% number.forEach((entry) => { %>
+  <% if(pro.length) { %>
+    <% pro.forEach((entry) => { %>
       <div class="box-producto">
-        <h2><%= entry.title %></h2>
+        <h2><%= entry.productName %></h2>
         <div class="box-image">
           <img src="../image/fondo.jpg" alt="titulo" class="item-image">
         </div>
@@ -14,17 +14,17 @@
               <th>Color</th>
             </tr>
             <tr>
-              <td><%= entry.categoria %></td>
+              <td><%= entry.category %></td>
               <td><%= entry.talle %></td>
               <td><%= entry.color %></td>
             </tr>
           </table>
         </div>
         <div class="box-descripcion">
-          <p>descipcion del producto</p>
-          <span>PRECIO: $10.000</span>
+          <p><%= entry.descripcion %></p>
+          <span>PRECIO:<% let number = Number(entry.precio); %> $<%= number.toFixed(2) %></span>
           <span>
-            <button>
+            <button class="box-add-cart">
               <svg class="icon-carrito" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 512 512" viewBox="0 0 512 512">
               <g>
                 <g>

@@ -526,3 +526,79 @@ footer .footer-curves-two {
   position: absolute;
   left: 0;
 }
+
+/* CARRITO COMPRAS */
+#box-cart-shop {
+  background-image: linear-gradient(dodgerblue, cyan, steelblue);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transform: translate(-100%, 0);
+  z-index: 2;
+}
+#box-cart-shop .title-carrito-shop {
+  background-image: linear-gradient(3.5deg, navy, royalblue, skyblue);
+  font-size: 2em;
+  font-family: Commissioner, sans-serif;
+  text-align: center;
+  line-height: 1.5em;
+  color: white;
+  text-shadow: 0.03em 0.03em navy, -0.03em 0.03em navy, 0.03em -0.03em navy, -0.03em -0.03em navy;
+  border-bottom-left-radius: 0.3em;
+  border-bottom-right-radius: 0.3em;
+  border-bottom: 0.05em solid white;
+}
+#box-cart-shop .box-items-shop {
+  border: 0.1em solid black;
+  display: flex;
+}
+#box-cart-shop .box-items-shop article {
+  border: 0.1em solid yellow;
+}
+#box-cart-shop .box-items-shop article figure {
+  width: 25%;
+  height: 7em;
+}
+#box-cart-shop .box-items-shop article figure img {
+  width: 100%;
+  height: 100%;
+}
+#box-cart-shop .box-items-shop article button {
+  border: none;
+}
+#box-cart-shop .close-cart-shop {
+  font-size: 2.9em;
+  line-height: 1em;
+  height: 1.5em;
+  width: 1.5em;
+  border-radius: 50%;
+  outline: none;
+  position: fixed;
+  bottom: 0;
+  border: 0.1em outset cyan;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), linear-gradient(-50deg, dodgerblue, blue);
+  color: #FFC107;
+}
+#box-cart-shop p {
+  font-family: "Commisioner", sans-serif;
+  font-size: 1.38em;
+  color: black;
+  position: absolute;
+  bottom: 3.5em;
+}
+#box-cart-shop p a {
+  color: white;
+  -webkit-text-decoration: underline gray;
+          text-decoration: underline gray;
+}
+
+/* PASARELA DE PAGOS */
+#box-pasarela-pago {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  top: 0;
+}

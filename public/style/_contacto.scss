@@ -1,7 +1,7 @@
 @import 'mixin';
 section {
   margin-bottom: 25em;
-  @include box-titulo('title-contactanos');
+  @include box-titulo('title-contactanos', 'Commissioner');
   .box-contactanos {
     background-image: linear-gradient(210deg,steelblue, dodgerblue);
     padding-bottom: 3em;
@@ -76,7 +76,7 @@ section {
       background-color: dodgerblue;
       z-index: -1;
     }
-    @include box-titulo('title-client');
+    @include box-titulo('title-client', 'Commissioner');
     p {
       color: white;
       font-family: 'Open Sans', sans-serif;
